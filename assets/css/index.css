@@ -10,7 +10,7 @@ modified by dngo
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 #page-wrapper {
@@ -21,7 +21,6 @@ body {
   background-size: cover;
   width: 100%;
 }
-
 
 /* Basic */
 
@@ -281,7 +280,6 @@ html {
   line-height: 60px;
 }
 
-
 /* Section */
 
 .section {
@@ -326,7 +324,6 @@ html {
   color: #fff;
   letter-spacing: 0.5px;
 }
-
 
 /* Buttons */
 
@@ -395,7 +392,6 @@ button:hover {
 .left-image-post .white-button {
   margin-top: 30px;
 }
-
 
 /* Services */
 
@@ -502,7 +498,7 @@ section.my-work .section-heading {
   cursor: pointer;
 }
 
-.isotope-toolbar input[type="radio"]:checked+span {
+.isotope-toolbar input[type="radio"]:checked + span {
   color: #ce5dc4;
   border-bottom: 2px solid #0e0e0e;
 }
@@ -528,11 +524,20 @@ section.my-work .section-heading {
 
 .isotope-item {
   position: relative;
-  width: 48%;
-  margin: 1%;
-  border-bottom: 2px solid #fafafa1a;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
+  width: 45%;
+  padding: 2%;
+  margin: 0;
+  background-color: #12002469;
+  border: 2px solid #232323;
+  border-radius: 10px;
+}
+
+.isotope-item:hover {
+  background-color: #2b005669;
+}
+
+.isotope-item h6 {
+  color: #ce5dc4;
 }
 
 .isotope-item img {
@@ -548,108 +553,10 @@ section.my-work .section-heading {
 }
 
 .lazyloading {
-  background: #f7f7f7 url(//afarkas.github.io/lazysizes/assets/imgs/loader.gif) no-repeat center;
+  background: #f7f7f7 url(//afarkas.github.io/lazysizes/assets/imgs/loader.gif)
+    no-repeat center;
   min-height: 60px;
 }
-
-figure.snip1321 {
-  overflow: hidden;
-  text-align: center;
-  -webkit-perspective: 50em;
-  perspective: 50em;
-}
-
-figure.snip1321 * {
-  -webkit-box-sizing: padding-box;
-  box-sizing: padding-box;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-
-figure.snip1321 figcaption {
-  top: 50%;
-  left: 20px;
-  right: 20px;
-  position: absolute;
-  opacity: 0;
-  z-index: 1;
-}
-
-figure.snip1321 h4 {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  color: #232323;
-}
-
-figure.snip1321 h6 {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  color: #5983e4;
-}
-
-figure.snip1321 span {
-  font-size: 14px;
-  font-style: italic;
-  display: block;
-  color: #7a7a7a;
-}
-
-figure.snip1321 i {
-  position: relative !important;
-  font-size: 18px;
-  background-color: #0e0e0e;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 5px;
-  color: #ce5dc4;
-}
-
-figure.snip1321:after {
-  background-color: #e2fffd;
-  position: absolute;
-  content: "";
-  display: block;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  -webkit-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  opacity: 0;
-}
-
-figure.snip1321 a {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-figure.snip1321:hover figcaption,
-figure.snip1321.hover figcaption {
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-
-figure.snip1321:hover:after,
-figure.snip1321.hover:after {
-  -webkit-transform: rotateX(0);
-  transform: rotateX(0);
-  opacity: 0.9;
-}
-
 
 /* Contact Me */
 
@@ -746,7 +653,6 @@ section.contact-me {
   .left-image-post .white-button {
     margin-top: 25px;
   }
-
 }
 
 .menu .container {
@@ -766,7 +672,6 @@ section.contact-me {
 }
 
 @media screen and (max-width: 845px) {
-
   #menu-toggle,
   #menu-close {
     display: inline-block;
@@ -778,7 +683,8 @@ section.contact-me {
     transform: translateX(-100%) !important;
     transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
     transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
-    transition: transform 233ms cubic-bezier(0, 0, 0.21, 1), -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+    transition: transform 233ms cubic-bezier(0, 0, 0.21, 1),
+      -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
   }
 
   .menu .image {
