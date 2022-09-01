@@ -503,11 +503,6 @@ section.my-work .section-heading {
   border-bottom: 2px solid #0e0e0e;
 }
 
-.isotope-box {
-  position: relative;
-  width: 100%;
-}
-
 .isotope-toolbar {
   text-align: center;
   margin: 10px;
@@ -522,11 +517,16 @@ section.my-work .section-heading {
   color: #fff;
 }
 
+.isotope-box {
+  position: relative;
+  width: 100%;
+}
+
 .isotope-item {
   position: relative;
-  width: 45%;
+  width: 41%;
   padding: 2%;
-  margin: 0;
+  margin: 2%;
   background-color: #12002469;
   border: 2px solid #232323;
   border-radius: 10px;
