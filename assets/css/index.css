@@ -9,6 +9,20 @@ modified by dngo
 @import url(fontawesome.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 
+:root {
+  --color1: #fff;
+  --color1a: #ffffff77;
+  --color1aa: #ffffff13;
+  --color2: #0e0e0e;
+  --colorMenu1: #3c4c85;
+  --colorMenu2: #212c55;
+  --colorMenu3: #4c644e;
+  --colorIsotope1: #12002469;
+  --colorIsotope2: #2b005669;
+  --colorIsotope3: #16001d;
+  --colorIsotope4: #ce5dc4;
+}
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -42,13 +56,13 @@ a:hover {
 p {
   font-size: 16px;
   line-height: 24px;
-  color: #fff;
+  color: var(--color1);
 }
 
 h4 {
   font-size: 26px;
   font-weight: 700;
-  color: #fff;
+  color: var(--color1);
   letter-spacing: 0.25px;
 }
 
@@ -104,7 +118,7 @@ html {
 }
 
 .main-nav li:last-child a {
-  border-bottom: 2px solid #4c644e;
+  border-bottom: 2px solid var(--colorMenu3);
 }
 
 .main-nav li {
@@ -117,16 +131,16 @@ html {
   display: inline-block;
   font-size: 16px;
   font-weight: 700;
-  color: #fff;
+  color: var(--color1);
   width: 100%;
   transition: all 0.5s;
-  border-top: 2px solid #4c644e;
+  border-top: 2px solid var(--colorMenu3);
 }
 
 .main-nav li:hover a,
 .main-nav li.active a {
-  background: #212c55;
-  color: #fff;
+  background: var(--colorMenu2);
+  color: var(--color1);
 }
 
 /* Sidebar Menu */
@@ -153,7 +167,7 @@ html {
 .menu .author-content span {
   font-size: 13px;
   font-style: italic;
-  color: #fff;
+  color: var(--color1);
 }
 
 .menu .social-network {
@@ -170,15 +184,14 @@ html {
   display: inline-block;
   text-align: center;
   line-height: 40px;
-  background-color: #00000033;
-  color: #fff;
+  color: var(--color1);
   font-size: 14px;
   transition: all 0.5s;
 }
 
 .menu .social-network ul li a:hover {
-  background-color: #fff;
-  color: #3c4c85;
+  background-color: var(--color1);
+  color: var(--colorMenu1);
 }
 
 .menu .copyright-text {
@@ -187,7 +200,7 @@ html {
 }
 
 .menu .copyright-text p {
-  border-top: 1px solid #fafafa1a;
+  border-top: 1px solid var(--color1aa);
   display: inline-block;
   width: 100%;
   padding-left: 30px;
@@ -223,7 +236,7 @@ html {
   left: 10%;
   -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
   -webkit-overflow-scrolling: touch;
-  background-color: #0e0e0e;
+  background-color: var(--color2);
   box-sizing: border-box;
   height: 100vh;
   max-height: 100vh !important;
@@ -241,7 +254,7 @@ html {
 }
 
 .menu-toggle {
-  color: #fff;
+  color: var(--color1);
   cursor: pointer;
   font-size: 25px;
   position: fixed;
@@ -255,8 +268,8 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  color: #0e0e0e;
-  background-color: #3c4c85;
+  color: var(--color2);
+  background-color: var(--colorMenu1);
   width: 60px;
   height: 60px;
   text-align: center;
@@ -271,8 +284,8 @@ html {
 #menu-close {
   cursor: pointer;
   text-align: right;
-  color: #0e0e0e;
-  background-color: #3c4c85;
+  color: var(--color2);
+  background-color: var(--colorMenu1);
   width: 100%;
   height: 60px;
   text-align: center;
@@ -283,14 +296,14 @@ html {
 /* Section */
 
 .section {
-  color: #fff;
+  color: var(--color1);
   width: 55%;
   right: 10%;
   left: 35%;
   position: relative;
   min-height: 100vh;
   padding-bottom: 50px;
-  border-bottom: 3px solid rgba(250, 250, 250, 0.25);
+  border-bottom: 3px solid var(--color1a);
 }
 
 .section-heading {
@@ -301,27 +314,27 @@ html {
 .section-heading h1 {
   font-size: 69px;
   font-weight: 700;
-  color: #fff;
-  text-shadow: 1.5px 1.5px 0px #4b63ff;
+  color: var(--color1);
+  text-shadow: 1.5px 1.5px 0px var(--colorMenu1);
 }
 
 .section-heading h2 {
   font-size: 32px;
   font-weight: 500;
-  color: #fff;
+  color: var(--color1);
 }
 
 .section-heading .line-dec {
   width: 60px;
   height: 3px;
-  background-color: #0e0e0e;
+  background-color: var(--color1a);
   margin: 10px auto;
 }
 
 .section-heading span {
   margin-top: 5px;
   font-size: 16px;
-  color: #fff;
+  color: var(--color1);
   letter-spacing: 0.5px;
 }
 
@@ -330,8 +343,8 @@ html {
 .white-button a {
   display: inline-block;
   padding: 12px 20px;
-  background-color: #fff;
-  color: #0e0e0e;
+  background-color: var(--color1);
+  color: var(--color2);
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.5px;
@@ -340,15 +353,15 @@ html {
 }
 
 .white-button a:hover {
-  background-color: #0e0e0e;
-  color: #fff;
+  background-color: var(--color2);
+  color: var(--color1);
 }
 
 button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #fff;
-  color: #0e0e0e;
+  background-color: var(--color1);
+  color: var(--color2);
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.5px;
@@ -361,8 +374,8 @@ button {
 
 button:hover {
   outline: none;
-  background-color: #0e0e0e;
-  color: #fff;
+  background-color: var(--color2);
+  color: var(--color1);
 }
 
 /* Left & Right Post */
@@ -370,12 +383,14 @@ button:hover {
 .right-image-post {
   margin-top: 20px;
   padding-top: 60px;
-  border-top: 2px solid #fafafa1a;
+  border-top: 2px solid var(--color1aa);
 }
 
 .left-image img,
 .right-image img {
-  border-radius: 5px;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 15px 70px #000000;
 }
 
 .right-image-post h4,
@@ -403,7 +418,7 @@ button:hover {
 .service-item {
   margin-bottom: 10px;
   padding: 50px;
-  background-color: #fafafa1a;
+  background-color: var(--color1aa);
   transition: all 0.5s;
 }
 
@@ -416,7 +431,7 @@ button:hover {
 }
 
 .service-item:hover {
-  background-color: #fff;
+  background-color: var(--color1);
 }
 
 .service-item:hover h4 {
@@ -499,8 +514,8 @@ section.my-work .section-heading {
 }
 
 .isotope-toolbar input[type="radio"]:checked + span {
-  color: #ce5dc4;
-  border-bottom: 2px solid #0e0e0e;
+  color: var(--colorIsotope4);
+  border-bottom: 2px solid var(--color2);
 }
 
 .isotope-toolbar {
@@ -509,12 +524,12 @@ section.my-work .section-heading {
 }
 
 .isotope-toolbar p {
-  border-top: 1px solid #fff;
+  border-top: 1px solid var(--color1);
   padding-top: 15px;
 }
 
 .isotope-toolbar a {
-  color: #fff;
+  color: var(--color1);
 }
 
 .isotope-box {
@@ -527,17 +542,18 @@ section.my-work .section-heading {
   width: 41%;
   padding: 2%;
   margin: 2%;
-  background-color: #12002469;
-  border: 2px solid #232323;
+  background-color: var(--colorIsotope1);
+  border: 2px solid var(--colorIsotope3);
+  transition: background 0.2s ease-in;
   border-radius: 10px;
 }
 
 .isotope-item:hover {
-  background-color: #2b005669;
+  background-color: var(--colorIsotope2);
 }
 
 .isotope-item h6 {
-  color: #ce5dc4;
+  color: var(--colorIsotope4);
 }
 
 .isotope-item img {
@@ -548,57 +564,10 @@ section.my-work .section-heading {
   border-radius: 5px;
 }
 
-.lazyload {
-  background: #f7f7f7;
-}
-
-.lazyloading {
-  background: #f7f7f7 url(//afarkas.github.io/lazysizes/assets/imgs/loader.gif)
-    no-repeat center;
-  min-height: 60px;
-}
-
 /* Contact Me */
 
 section.contact-me {
   border-bottom: none;
-}
-
-#contact input {
-  background-color: #fafafa1a;
-  border: 1px solid #fafafa;
-  border-radius: 0px;
-  margin-bottom: 30px;
-  color: #fff;
-  font-size: 14px;
-  height: 40px;
-  line-height: 40px;
-  width: 100%;
-  padding-left: 15px;
-}
-
-#contact input:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-#contact textarea {
-  background-color: #fafafa1a;
-  border: 1px solid #fafafa;
-  border-radius: 0px;
-  margin-bottom: 30px;
-  color: #fff;
-  font-size: 14px;
-  height: 180px;
-  max-height: 220px;
-  line-height: 40px;
-  width: 100%;
-  padding-left: 15px;
-}
-
-#contact textarea:focus {
-  outline: none;
-  box-shadow: none;
 }
 
 #contact {
@@ -611,7 +580,7 @@ section.contact-me {
   }
 
   .section {
-    color: #fff;
+    color: var(--color1);
     width: 65%;
     right: 5%;
     left: 30%;
