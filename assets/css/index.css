@@ -301,9 +301,9 @@ html {
   right: 10%;
   left: 35%;
   position: relative;
-  min-height: 100vh;
   padding-bottom: 50px;
   border-bottom: 3px solid var(--color1a);
+  min-height: 100vh;
 }
 
 .section-heading {
@@ -408,80 +408,46 @@ button:hover {
   margin-top: 30px;
 }
 
-/* Services */
+/* Skills */
 
-.my-services .col-md-6 {
+.my-skills .col-md-6 {
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.service-item {
+.skill-item {
   margin-bottom: 10px;
-  padding: 50px;
+  padding: 40px;
   background-color: var(--color1aa);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transition: all 0.5s;
 }
 
-.service-item h4 {
+.skill-item i {
+  font-size: 69px;
+}
+
+.skill-item h4 {
   transition: all 0.5s;
 }
 
-.service-item p {
+.skill-item p {
   transition: all 0.5s;
 }
 
-.service-item:hover {
-  background-color: var(--color1);
+.skill-item:hover {
+  background-color: var(--color1a);
 }
 
-.service-item:hover h4 {
-  color: #1e1e1e;
+.skill-item:hover h4 {
+  color: var(--color2);
 }
 
-.service-item:hover p {
-  color: #4a4a4a;
-}
-
-.service-item .service-icon {
-  width: 70px;
-  height: 70px;
-  display: inline-block;
-  margin-bottom: 30px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: all 0.5s;
-}
-
-.service-item .first-service-icon {
-  background-image: url(../images/first-white-icon.png);
-}
-
-.service-item:hover .first-service-icon {
-  background-image: url(../images/first-main-icon.png);
-}
-
-.service-item .second-service-icon {
-  background-image: url(../images/second-white-icon.png);
-}
-
-.service-item:hover .second-service-icon {
-  background-image: url(../images/second-main-icon.png);
-}
-
-.service-item .third-service-icon {
-  background-image: url(../images/third-white-icon.png);
-}
-
-.service-item:hover .third-service-icon {
-  background-image: url(../images/third-main-icon.png);
-}
-
-.service-item .fourth-service-icon {
-  background-image: url(../images/fourth-white-icon.png);
-}
-
-.service-item:hover .fourth-service-icon {
-  background-image: url(../images/fourth-main-icon.png);
+.skill-item:hover p {
+  color: var(--color2);
 }
 
 /* My Work */
